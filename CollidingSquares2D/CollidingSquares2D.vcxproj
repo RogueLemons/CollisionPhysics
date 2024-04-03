@@ -112,6 +112,11 @@
       <AdditionalLibraryDirectories>$(SolutionDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-network-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)..\SFML-2.5.1\dlls\sfml-window-d-2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)..\SFML-2.5.1\dlls\sfml-system-d-2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)..\SFML-2.5.1\dlls\sfml-graphics-d-2.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -131,6 +136,11 @@
       <AdditionalLibraryDirectories>$(SolutionDir)..\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-network.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)..\SFML-2.5.1\dlls\sfml-system-2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)..\SFML-2.5.1\dlls\sfml-window-2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)..\SFML-2.5.1\dlls\sfml-graphics-2.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CollidingPolygons2D.cpp" />
