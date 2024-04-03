@@ -1,7 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/CollidingSquares2D/.vs/CollidingSquares2D
-/.vs/CollisionPhysics/v17
-*.json

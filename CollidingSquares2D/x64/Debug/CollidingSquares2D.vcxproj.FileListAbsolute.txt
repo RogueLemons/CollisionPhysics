@@ -1,2 +1,0 @@
-C:\Users\Ludvig\source\repos\CollidingSquares2D\x64\Debug\CollidingSquares2D.exe
-C:\Users\rogue\source\repos\CollisionPhysics\CollidingSquares2D\x64\Debug\CollidingSquares2D.exe
