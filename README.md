@@ -1,5 +1,5 @@
 # Polygon Physics with C++
-This showcases my interest in physics and code optimization. First you get two videos showing the end result of 2D Physics of polygons colliding with each other. The videos showcase the same size and number of polygons as in the .exe files in the Release and Debug folders (which you can run yourself without building).
+This showcases my interest in physics and code optimization. First you get two videos showing the end result of 2D Physics of polygons colliding with each other. The videos showcase the same size and number of polygons as in the .exe files in the Release and Debug folders (which should build from the Visual Studio project file without hassle).
 
 Looking through the source code you will find:
 - Uniform grid space partitioning to handle more polygons than we could ever need for this demo.
